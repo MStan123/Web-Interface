@@ -40,7 +40,6 @@ img {
   border-radius: 5px;
 }
 #grid1 { 
-    display: grid;
     grid-template-rows: 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -166,14 +165,6 @@ width: 315px;
 @media only screen 
 and (min-width: 390px) 
 and (orientation: portrait) {
-#grid1 { 
-    display: grid;
-    grid-template-rows: 0.5fr;
-    grid-template-columns: 0fr 9fr 6fr;
-    grid-gap: 10px;
-    margin: 6px;
-    color:white;
-  }
 #grid {
   display: grid;
   grid-template-rows: 0.5fr;
@@ -218,14 +209,6 @@ width: 345px;
 @media only screen 
 and (min-width: 360px) 
 and (orientation: portrait) {
-#grid1 { 
-    display: grid;
-    grid-template-rows: 0.5fr;
-    grid-template-columns: 0fr 9fr 6fr;
-    grid-gap: 10px;
-    margin: 6px;
-    color:white;
-  }
 #grid {
   display: grid;
   grid-template-rows: 0.5fr;
