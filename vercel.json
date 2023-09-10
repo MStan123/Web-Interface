@@ -10,15 +10,15 @@
     },
     {
       "src": "style.css",
-      "use": "@now/node"
+      "use": "@now/static"
     },
     {
       "src": "chart.js",
-      "use": "@now/node"
+      "use": "@now/static"
     },
     {
       "src": "map.js",
-      "use": "@now/node"
+      "use": "@now/static"
     },
     {
       "src": "index.html",
