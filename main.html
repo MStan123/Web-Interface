@@ -15,7 +15,7 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
+    }
     .content {
     position: fixed;
     bottom: 0;
@@ -23,70 +23,75 @@
     width: 100%;
     left: 0px;
     overflow: auto;
-        }
+    }
     </style>
-</head>
-    
+</head> 
 
-  <body>
-<video autoplay muted loop id="myVideo">
-  <source src="Space.mp4" type="video/mp4">
-</video>
+<body>
+    <video autoplay muted loop id="myVideo">
+      <source src="Space.mp4" type="video/mp4">
+    </video>
 
-<div class="content">
-<div id="grid1">
-        <h1> </h1>
-        <h2><center>MSU-Space</center></h2>
-        <h3><center>ID: 368</center></h3></div>
-    <div id="grid">
-      <div class="header-info-rightbox"> <canvas id="MyChart"></canvas></div>
-      <div class="header-info-rightbox1"><canvas id="myChart"></canvas></div>
-      <div class="header-info-rightbox2"><canvas id="meChart"></canvas></div>
-      <div class="wrapper">
-        <button type="button" class="btn btn-outline-ready btn-sm">Ready command</button>
-        <ul>
-            <li><h2 class="h2">CO: <span id="CO"></span> ppt</h2></li>
-            <li><h2 class="h2">NO2: <span id="No2"></span> ppt</h2></li>
-            <li><h2 class="h2">H2: <span id="H2"></span> ppt</h2></li>
-         <li><h3 class="h2">Working Time: <span id="Wt"></span>s</h3></li>
-            <li><h3 class="h2">Package Number: <span id="Rp"></span></h3></li>
-         <li><h3 class="h2">Leaving Time: <span id="Hour"></span>:<span id="Minute"></span> <span id="day"></span>/<span id="month"></span>/2022</h3></li>
-        </ul>
-      </div>
-        <figure><div id="fotka"><h2><center>Photo of Surface</center></h2><img src="fotka.PNG" alt="photo"></div></figure>
-        <div id="map" style="position: relative; overflow: hidden;"></div>
-</div>
+    <div class="content">
+        <div id="grid1">
+            <h1> </h1>
+            <h2><center>MSU-Space</center></h2>
+            <h3><center>ID: 368</center></h3></div>
+        <div id="grid">
+          <div class="header-info-rightbox"> <canvas id="MyChart"></canvas></div>
+          <div class="header-info-rightbox1"><canvas id="myChart"></canvas></div>
+          <div class="header-info-rightbox2"><canvas id="meChart"></canvas></div>
+          <div class="wrapper">
+            <button type="button" class="btn btn-outline-ready btn-sm">Ready command</button>
+            <ul>
+                <li><h2 class="h2">CO: <span id="CO"></span> ppt</h2></li>
+                <li><h2 class="h2">NO2: <span id="No2"></span> ppt</h2></li>
+                <li><h2 class="h2">H2: <span id="H2"></span> ppt</h2></li>
+             <li><h3 class="h2">Working Time: <span id="Wt"></span>s</h3></li>
+                <li><h3 class="h2">Package Number: <span id="Rp"></span></h3></li>
+             <li><h3 class="h2">Leaving Time: <span id="Hour"></span>:<span id="Minute"></span> <span id="day"></span>/<span id="month"></span>/2022</h3></li>
+            </ul>
+          </div>
+        <figure><div id="fotka"><h2><center>Photo of Surface</center></h2><img src="fotka.PNG" alt="photo"></div>
+        </figure>
+            <div id="map" style="position: relative; overflow: hidden;"></div>
+        </div>
         <div id="msg"></div>
-    <center><p style="margin: 0px;color: aliceblue;">*Made on Earth by humans*</p></center></div>
-<script> window.onbeforeunload = function() {return "Data will be lost if you leave the page, are you sure?"} </script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0-beta/dist/chart.min.js"></script>
+    </div>
       
-<script src="chart.js"></script>
-<script> 
-createChart("MyChart", 'Velocity', "rgb(255, 99, 132)");
-createChart("myChart", 'Altitude', "#FF0000");
-createChart("meChart", 'Voltage', "#FF4500");
-</script>
+    <script> 
+        window.onbeforeunload = function() {return "Data will be lost if you leave the page, are you sure?"} 
+    </script>
       
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0-beta/dist/chart.min.js"></script>
       
-<script src="map.js"></script>
+    <script src="chart.js"></script>
+    
+    <script> 
+        createChart("MyChart", 'Velocity', "rgb(255, 99, 132)");
+        createChart("myChart", 'Altitude', "#FF0000");
+        createChart("meChart", 'Voltage', "#FF4500");
+    </script>
       
-<script>                                                 
-document.getElementById("CO").textContent= Math.floor(Math.random() * 101);
-document.getElementById("No2").textContent= Math.floor(Math.random() * 101);
-document.getElementById("H2").textContent= Math.floor(Math.random() * 101);
-document.getElementById("Wt").textContent= Math.floor(Math.random() * 61);
-document.getElementById("Rp").textContent= Math.floor(Math.random() * 11);
-document.getElementById("Hour").textContent= Math.floor(Math.random() * 13);
-document.getElementById("Minute").textContent= Math.floor(Math.random() * 61);
-document.getElementById("day").textContent= Math.floor(Math.random() * 31);
-document.getElementById("month").textContent= Math.floor(Math.random() * 12);
-</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer>
+    </script>
       
-<script>
-var video = document.getElementById("myVideo");
-</script>
+    <script src="map.js"></script>
       
+    <script>                                                 
+        document.getElementById("CO").textContent= Math.floor(Math.random() * 101);
+        document.getElementById("No2").textContent= Math.floor(Math.random() * 101);
+        document.getElementById("H2").textContent= Math.floor(Math.random() * 101);
+        document.getElementById("Wt").textContent= Math.floor(Math.random() * 61);
+        document.getElementById("Rp").textContent= Math.floor(Math.random() * 11);
+        document.getElementById("Hour").textContent= Math.floor(Math.random() * 13);
+        document.getElementById("Minute").textContent= Math.floor(Math.random() * 61);
+        document.getElementById("day").textContent= Math.floor(Math.random() * 31);
+        document.getElementById("month").textContent= Math.floor(Math.random() * 12);
+    </script>
+      
+    <script>
+        var video = document.getElementById("myVideo");
+    </script>
 </body>
 </html>
