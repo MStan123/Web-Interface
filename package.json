@@ -1,12 +1,14 @@
 {
-  "name": "msu-space",
+  "name": "MSU-space",
   "version": "1.0.0",
+  "main": "index.html",
   "description": "MSU Space website",
   "scripts": {
-    "start": "serve -s"
+    "start": "serve"
   },
+  "author": "Murad",
+  "license": "MIT",
   "dependencies": {
-    "serve": "^11.3.2"
-  },
-  "license": "MIT"
+    "serve": "^12.0.0"
+  }
 }
