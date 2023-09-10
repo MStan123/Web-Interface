@@ -1,0 +1,12 @@
+{
+  "name": "msu-space",
+  "version": "1.0.0",
+  "description": "MSU Space website",
+  "scripts": {
+    "start": "serve -s"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  },
+  "license": "MIT"
+}

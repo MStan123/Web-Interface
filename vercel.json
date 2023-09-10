@@ -1,0 +1,28 @@
+{
+  "builds": [
+    {
+      "src": "Space.mp4",
+      "use": "@now/static"
+    },
+    {
+      "src": "fotka.PNG",
+      "use": "@now/static"
+    },
+    {
+      "src": "style.css",
+      "use": "@now/node"
+    },
+    {
+      "src": "chart.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "map.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@now/static"
+    }
+  ]
+}
